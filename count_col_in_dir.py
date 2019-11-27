@@ -3,10 +3,11 @@ import sys
 from pathlib import Path
 from Utils import get_file_path_list
 
-# directory = path.join(getcwd(), sys.argv[1])
-directory = path.join(getcwd(), "../other")
-extension = "csv"
-# extension = sys.argv[2]
+# absolute path to directory
+directory = path.join(sys.argv[1])
+# directory = path.join(getcwd(), "../other")
+# extension = "csv"
+extension = sys.argv[2]
 delimiter = ","
 
 file_path_list = get_file_path_list(directory, extension)
