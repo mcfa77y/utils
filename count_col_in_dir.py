@@ -8,7 +8,7 @@ directory = path.join(sys.argv[1])
 # directory = path.join(getcwd(), "../other")
 # extension = "csv"
 extension = sys.argv[2]
-delimiter = ","
+delimiter = "\t"
 
 file_path_list = get_file_path_list(directory, extension)
 for file_path in file_path_list:
